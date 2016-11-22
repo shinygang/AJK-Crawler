@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>爬取安居客经纪人数据</title>
+    <style type="text/css">
+      #txt_url {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 80%;
+        height: 40px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      #txt_page {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      #btnRen {
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        line-height: 1;
+        vertical-align: middle;
+        text-align: center;
+        color: #fff;
+        background-color: #36d28e;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        font-weight: normal;
+        margin-left: 10px;
+      }
+
+      #txt_remark {
+        border: solid 1px #f1f1f1;
+        padding: 10px;
+        margin: 10px auto;
+        display: none;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>爬取安居客经纪人数据（名字，公司，电话）</h1>
+    爬取地址：<input id="txt_url" type="text" /> <br/>
+    爬取页数：<input id="txt_page" type="text" value="10" />
+    <button id="btnRen">开始爬取</button>
+    <div id="txt_remark"></div>
+  </body>
+
+  <script>
+    require('./renderer.js')
+  </script>
+</html>

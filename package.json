@@ -1,0 +1,33 @@
+{
+  "name": "AJK-Crawler",
+  "version": "1.0.0",
+  "description": "安居客爬取程序",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . PaChong --platform=win32 --arch=all -version=0.0.1 --icon=app.ico --out=Staging --version-string.ProductName=Telar Converter --version-string.ProductVersion=0.5.0",
+    "package": "electron-packager ./ PaChong --all --out ~/Desktop/tg --version 0.0.1 --overwrite"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "安居客",
+    "爬取程序",
+    "安居客经纪人爬虫",
+    "爬虫"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0",
+    "superagent": "^3.0.0"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-packager": "^8.3.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "node-xlsx": "^0.7.4"
+  }
+}
